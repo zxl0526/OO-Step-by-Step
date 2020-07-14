@@ -1,4 +1,4 @@
-package com.thoughtworks.basic;
+package com.thoughtworks.basic.Service;
 
 /**
  * @author adminzxl
@@ -31,8 +31,8 @@ public abstract class Person {
 
        }
     public static String introduce(String name, int age) {
-        name="Tom";
-        age=21;
+       // name="Tom";
+        //age=21;
         //System.out.println("My name is "+name+",my age is "+age);
         return "My name is "+name+". I am " + age + " years old.";
     }

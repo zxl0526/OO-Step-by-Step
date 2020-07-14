@@ -1,20 +1,19 @@
-package com.thoughtworks.basic;
+package com.thoughtworks.basic.Service;
+
+import com.thoughtworks.basic.DTO.ClassAndGradeDTO;
+import lombok.Data;
 
 /**
  * @author adminzxl
  */
+@Data
 public class Student extends Person {
-    public int classNumber;
-    public int getClassNumber() {
-        return classNumber;
-    }
 
-    public void setClassNumber(int classNumber) {
-        this.classNumber = classNumber;
-    }
-    Student(String name ,int age ,int classNumber){//子类构造方法
-        super(name,age);
-        this.classNumber = classNumber;
+    private ClassAndGradeDTO classAndGradeDTO;
+
+    public Student(String myName, int myage, ClassAndGradeDTO classAndGradeDTO) {
+        super(myName, myage);
+        this.classAndGradeDTO = classAndGradeDTO;
     }
 
     public static String  introduce(String name, int age, int classNumber){//显示班级

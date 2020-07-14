@@ -1,5 +1,6 @@
-package com.thoughtworks.basic;
+package com.thoughtworks.basic.ServiceTest;
 
+import com.thoughtworks.basic.Service.Teacher;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -12,7 +13,7 @@ public class TeacherTest {
         int age=30;
         String job="Teacher";
         // when
-        String introduceResult=Teacher.introduce(name,age,job);
+        String introduceResult= Teacher.introduce(name,age,job);
         //then
         assertEquals(introduceResult,"My name is Matt. I am 30 years old. I am a Teacher.");
     }

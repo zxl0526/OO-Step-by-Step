@@ -1,4 +1,4 @@
-package com.thoughtworks.basic;
+package com.thoughtworks.basic.Service;
 
 /**
  * @author adminzxl
