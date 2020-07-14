@@ -18,29 +18,6 @@ public class PersonTest {
         //then
         assertEquals(introduceResult,"My name is Tom. I am 21 years old.");
     }
-    @Test
-    public void when_hava_Student_class_should_introduce() {
-        //given
-        String name="Tom";
-        int age=21;
-        int classNumber=2;
-        // when
-        String introduceResult=Person.Student.introduce(name,age,classNumber);
-        //then
-        assertEquals(introduceResult,"My name is Tom. I am 21 years old. I am a Student of Class 2");
-    }
-
-    @Test
-    public void when_hava_Teacher_class_should_introduce() {
-        //given
-        String name="Matt";
-        int age=30;
-        String job="Teacher";
-        // when
-        String introduceResult=Person.Teacher.introduce(name,age,job);
-        //then
-        assertEquals(introduceResult,"My name is Matt. I am 30 years old. I am a Teacher.");
-    }
 
 
 }
