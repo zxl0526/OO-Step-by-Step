@@ -13,7 +13,7 @@ public class Teacher extends Person {
     public String  getJob(){
         return job;
     }
-    Teacher(String name ,int age ,String job){//子类构造方法
+    public Teacher(String name, int age, String job){//子类构造方法
         super(name,age);
         this.job = job;
     }
