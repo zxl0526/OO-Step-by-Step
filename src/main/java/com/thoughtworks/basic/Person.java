@@ -40,7 +40,7 @@ public abstract class Person {
     public static String introduce(String name, int age) {
         name="Tom";
         age=21;
-        System.out.println("My name is "+name+",my age is "+age);
+        //System.out.println("My name is "+name+",my age is "+age);
         return "My name is "+name+". I am " + age + " years old.";
     }
 
@@ -51,10 +51,24 @@ public abstract class Person {
             this.classNumber = classNumber;
         }
 
-        public static String  introduces(String name, int age, int classNumber){//显示班级
+        public static String  introduce(String name, int age, int classNumber){//显示班级
 
             //System.out.println("My name is "+name+". I am " + age + " years old. I am a Student of Class" + classNumber);
             return "My name is "+name+". I am " + age + " years old. I am a Student of Class " + classNumber;
+        }
+    }
+
+    static class Teacher extends Person {
+        String job;
+        Teacher(String name ,int age ,String job){//子类构造方法
+            super(name,age);
+            this.job = job;
+        }
+
+        public static String  introduce(String name, int age, String job){//显示工作
+
+            //System.out.println("My name is "+name+". I am " + age + " years old. I am a Student of Class" + classNumber);
+            return "My name is "+name+". I am " + age + " years old. I am a " + job+".";
         }
     }
 
