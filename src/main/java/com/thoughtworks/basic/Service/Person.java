@@ -30,12 +30,7 @@ public abstract class Person {
         this.age = myage;
 
        }
-    public static String introduce(String name, int age) {
-       // name="Tom";
-        //age=21;
-        //System.out.println("My name is "+name+",my age is "+age);
-        return "My name is "+name+". I am " + age + " years old.";
-    }
+    abstract String introduce(String name, int age, int classNum);
 
 
 }
